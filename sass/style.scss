@@ -11,6 +11,15 @@
     width: 100%;
 }
 
+h3 {
+    text-transform: uppercase;
+    font-size: 25px;
+    color: $color-background;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 87px;
+}
+
 h4 {
     color: $color-heading;
 }
@@ -174,6 +183,56 @@ input {
             display: flex;
             align-items: center;
             padding: 0 50px;
+        }
+    }
+}
+
+.special-offers {
+
+    .special-subtitle {
+        color: #626262;
+        text-align: center;
+        line-height: 25px;
+        margin-bottom: 40px;
+    }
+
+    &-items {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 268px;
+            height: 193px;
+            padding: 3px;
+        }
+    }
+
+    .slider-dots {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+
+        &-element {
+            background-color: $color-background;
+            border-radius: 50%;
+            cursor: pointer;
+            height: 16px;
+            width: 16px;
+            margin-left: 10px;
+            position: relative;
+        }
+
+        &-element::before {
+            content:"";
+            position: absolute;
+            background: $color-main;
+            left: 20%;
+            top: 20%;
+            width: 4px;
+            height: 4px;
+            border: 3px solid $color-main;
+            border-radius: 50%;
+            transition:0.5s all;
         }
     }
 }
