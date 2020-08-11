@@ -60,6 +60,13 @@ input {
     border-right: 2px solid #374d63;
 }
 
+.section-subtitle {
+    color: #626262;
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+
 .header {
     height: 100vh;
 
@@ -189,13 +196,6 @@ input {
 
 .special-offers {
 
-    .special-subtitle {
-        color: #626262;
-        text-align: center;
-        line-height: 25px;
-        margin-bottom: 40px;
-    }
-
     &-items {
         display: flex;
         justify-content: center;
@@ -233,6 +233,49 @@ input {
             border: 3px solid $color-main;
             border-radius: 50%;
             transition:0.5s all;
+        }
+    }
+}
+
+.holiday-type {
+    background-image: url("../images/Layer_12.png");
+    background-position: center;
+    background-color: $color-background;
+    color: $color-main;
+
+    .holiday-title {
+        color: $color-main;
+        padding-top: 30px;
+    }
+
+    &-items {
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            color: $color-text;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 40px;
+            font-size: 26px;
+            line-height: 50px;
+        }
+
+        [class*="fa-"] {
+            color: $color-text;
+            width: 158px;
+            height: 158px;
+            font-size: 70px;
+            border: 5px solid $color-main;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            &:hover {
+                color: $color-button;
+            }
         }
     }
 }
