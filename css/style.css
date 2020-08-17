@@ -5,6 +5,12 @@
 }
 
 .container {
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container-fluid {
   margin: 0 auto;
   width: 100%;
 }
@@ -15,7 +21,7 @@ h3 {
   color: #2c3e50;
   text-align: center;
   line-height: 30px;
-  margin-top: 87px;
+  margin-top: 80px;
 }
 
 h4 {
@@ -34,7 +40,7 @@ a {
 
 button {
   background-color: #1dd2af;
-  color: #ffffff;
+  color: #f9f9fa;
   border: 2px solid #1dd2af;
   padding: 10px 20px;
   text-transform: uppercase;
@@ -50,7 +56,7 @@ input {
 }
 
 [class*="fab"] {
-  color: #ffffff;
+  color: #f9f9fa;
   font-size: 16px;
   font-weight: 400;
   padding: 12px;
@@ -75,7 +81,7 @@ input {
   width: 100%;
   height: 40px;
   background-color: #2c3e50;
-  color: #ffffff;
+  color: #f9f9fa;
   font-size: 15px;
   box-shadow: 0 1px 0 rgba(213, 212, 212, 0.75);
   cursor: pointer;
@@ -155,12 +161,12 @@ input {
 }
 
 .header .header-title h1 {
-  color: #ffffff;
+  color: #f9f9fa;
   text-transform: uppercase;
 }
 
 .header .header-title h2 {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(249, 249, 250, 0.9);
   padding-top: 10px;
 }
 
@@ -243,13 +249,18 @@ input {
   padding-top: 30px;
 }
 
+.holiday-type .holiday-subtitle {
+  color: #ffffff;
+}
+
 .holiday-type-items {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .holiday-type-items a {
-  color: #ffffff;
+  color: #f9f9fa;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -259,7 +270,7 @@ input {
 }
 
 .holiday-type-items [class*="fa-"] {
-  color: #ffffff;
+  color: #f9f9fa;
   width: 158px;
   height: 158px;
   font-size: 70px;
@@ -272,6 +283,34 @@ input {
 
 .holiday-type-items [class*="fa-"]:hover {
   color: #1dd2af;
+}
+
+.quotes-wrapper .quote {
+  display: flex;
+}
+
+.quotes-wrapper .quote blockquote {
+  border: 1px solid #d1d3d5;
+  border-top: 3px solid #1dd2af;
+  padding: 15px;
+  margin: 10px 20px;
+}
+
+.quotes-wrapper .quote blockquote footer {
+  color: #1dd2af;
+  font-weight: 700;
+  margin-top: 5px;
+  background-color: transparent;
+}
+
+footer {
+  background-color: #2c3e50;
+  margin-top: 80px;
+}
+
+footer .contact {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

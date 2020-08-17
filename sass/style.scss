@@ -7,6 +7,12 @@
 }
 
 .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.container-fluid {
     margin: 0 auto;
     width: 100%;
 }
@@ -17,7 +23,7 @@ h3 {
     color: $color-background;
     text-align: center;
     line-height: 30px;
-    margin-top: 87px;
+    margin-top: 80px;
 }
 
 h4 {
@@ -248,9 +254,14 @@ input {
         padding-top: 30px;
     }
 
+    .holiday-subtitle {
+        color: $color-main;
+    }
+
     &-items {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
 
         a {
             color: $color-text;
@@ -277,5 +288,36 @@ input {
                 color: $color-button;
             }
         }
+    }
+}
+
+.quotes-wrapper {
+
+    .quote {
+        display: flex;
+        
+        blockquote {
+            border: 1px solid $color-border;
+            border-top: 3px solid $color-heading;
+            padding: 15px;
+            margin: 10px 20px;
+            
+            footer {
+                color: $color-heading;
+                font-weight: 700;
+                margin-top: 5px;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $color-background;
+    margin-top: 80px;
+
+    .contact {
+        display: flex;
+        justify-content: center;
     }
 }
