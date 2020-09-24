@@ -28,6 +28,8 @@ h3 {
 
 h4 {
     color: $color-heading;
+    margin-top: 50px;
+    padding-bottom: 10px;
 }
 
 a {
@@ -37,7 +39,7 @@ a {
 }
 
 .list-item {
-    display: inline-block;   
+    display: inline-block;  
 }
 
 button {
@@ -46,7 +48,7 @@ button {
     border: 2px solid $color-button;
     padding: 10px 20px;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
 }
 
@@ -295,12 +297,13 @@ input {
 
     .quote {
         display: flex;
+        justify-content: space-around;
         
         blockquote {
             border: 1px solid $color-border;
             border-top: 3px solid $color-heading;
             padding: 15px;
-            margin: 10px 20px;
+            margin-right: 5px;
             
             footer {
                 color: $color-heading;
@@ -315,9 +318,90 @@ input {
 footer {
     background-color: $color-background;
     margin-top: 80px;
+    color: $color-text;
 
     .contact {
         display: flex;
-        justify-content: center;
+
+        .newsletter {
+            
+            form {
+                
+                input {
+                    margin: 10px 10px 10px 0;
+                }
+                
+                button {
+                    padding: 8px 20px;
+                }
+            }
+        }
+
+       .tags {
+         
+            a {
+                display: inline-block;
+                border: 1px solid $color-text;
+                padding: 5px;
+                margin: 5px;
+                color: $color-text;
+            }
+       }
+
+       .address {
+
+           &-email {
+               color: $color-heading;
+               margin-bottom: 10px;
+               padding-top: 10px;
+           }
+       }
+
+       .social-media {
+            [class*="fab"] {
+                border: none;
+                padding-left: 0;
+            }
+       }
+    }
+
+    .footer-navigation {
+        border-top: 1px solid $color-border;
+        margin-top: 40px;
+        text-align: center;
+
+        &-links {
+            margin: 40px 20px 20px;
+            
+            a {
+                color: $color-main;
+                padding: 10px 5px;
+            }
+
+            a::after {
+                content: "::";
+                margin-left: 10px;
+            }
+        }
+
+        .copyright {
+            color: #5d6e80;
+        }
+    }
+
+    .back-to-home {
+        font-size: 19px;
+        width: 0;
+	    height: 0;
+	    border-left: 35px solid transparent;
+	    border-right: 35px solid transparent;
+	    border-bottom: 40px solid $color-button;
+        margin: 40px auto 0;
+        
+        .fas {
+            position: relative;
+            top: 16px;
+            right: 8px;
+        }
     }
 }
