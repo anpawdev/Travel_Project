@@ -215,48 +215,42 @@ input {
 
 .special-offers .carousel {
   position: relative;
-  width: 50%;
-  height: 50px;
+  height: 280px;
   margin: 0 auto;
 }
 
-.special-offers .carousel .nav {
+.special-offers .carousel .carousel-control {
   position: absolute;
-  top: 50%;
-  margin-top: -10px;
-  background-color: rgba(150, 150, 150, 0.3);
-  width: 20px;
-  height: 20px;
-  z-index: 2;
-  cursor: pointer;
-  border-radius: 50%;
+  padding: 16px;
+  top: 35%;
+  background-color: rgba(28, 201, 167, 0.3);
   border: none;
-  outline: none;
-  color: white;
-  -webkit-user-select: none;
+  border-radius: 50%;
+  color: #f9f9fa;
+  cursor: pointer;
+  transform: translate(0, -50%);
+  margin: 0 -20px;
 }
 
-.special-offers .carousel .nav-left {
-  left: -25px;
-}
-
-.special-offers .carousel .nav-right {
-  right: -25px;
+.special-offers .carousel .right {
+  right: 0;
 }
 
 .special-offers .carousel .carousel-content {
   position: relative;
   overflow: hidden;
-  transition: width .4s;
   height: 100%;
 }
 
 .special-offers .carousel .carousel-content .slide {
-  height: 100%;
-  background-color: black;
   position: absolute;
-  z-index: 1;
+  text-align: center;
   transition: left 0.4s cubic-bezier(0.47, 0.13, 0.15, 0.89);
+}
+
+.special-offers .carousel .carousel-content .slide img {
+  width: 75%;
+  height: 193px;
 }
 
 .holiday-type {
