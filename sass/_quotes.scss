@@ -1,0 +1,33 @@
+.quotes-wrapper {
+
+    .quote {
+        display: flex;
+        justify-content: space-around;
+        
+        blockquote {
+            border: 1px solid $color-border;
+            border-top: 3px solid $color-heading;
+            padding: 15px;
+            margin-right: 5px;
+            
+            footer {
+                color: $color-heading;
+                font-weight: 700;
+                margin-top: 5px;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .quotes-wrapper {
+        .quote {
+            display: block;
+
+            blockquote {
+                margin: 15px 10px;
+            }
+        }
+    }
+}

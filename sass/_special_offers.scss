@@ -1,0 +1,71 @@
+.special-offers {
+
+    .carousel {
+        position: relative;
+        height: 280px;
+        margin: 0 auto;
+    
+        .carousel-control {
+            position: absolute;
+            padding: 16px;
+            top: 35%;
+            background-color: rgba($color-button, 0.3);
+            border: none;
+            border-radius: 50%;
+            color: $color-text;
+            cursor: pointer;
+            transform: translate(0, -50%);
+            margin: 0 -20px;
+        }
+          
+        .right {
+            right: 0;
+        }
+    
+        .carousel-content {
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+    
+            .slide {
+                position: absolute;
+                text-align: center;
+                transition: left .4s cubic-bezier(.47,.13,.15,.89);
+            
+                img {
+                    height: 193px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .special-offers {
+
+        .carousel {
+
+            .carousel-control {
+                margin: -10px;
+                top: 100%;
+                right: 60%;
+            }
+
+            .right {
+                right: 35%;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .special-offers {
+
+        .carousel {
+
+            .carousel-control {
+                margin: -5px;
+            }
+        }
+    }
+}
