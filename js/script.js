@@ -111,3 +111,10 @@ function displaySlides() {
 }
 
 displaySlides();
+
+const navbar = document.querySelector('.navbar');
+const menu = document.querySelector('.navigation-list');
+
+navbar.addEventListener('click', function() {
+  menu.classList.toggle('active');
+});

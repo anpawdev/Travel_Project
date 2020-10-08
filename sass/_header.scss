@@ -67,6 +67,7 @@
 
             .navbar {
                 display: none;
+                cursor: pointer;
             }
         }
     }
@@ -149,17 +150,22 @@
 
         .navigation {
 
+            margin: 40px 0;
+
             .logo {
                 margin: 0;
+                z-index: 99999;
             }
 
             .navigation-links {
 
                 .navigation-list {
                     position: absolute;
-                    top: 25%;
-                    left: 10%;
+                    top: 18%;
+                    left: 0;
+                    text-align: center;
                     z-index: 999;
+                    display: none;
 
                     .list-item {
                         display: block;
@@ -173,6 +179,15 @@
 
                 .navbar {
                     display: block;
+                    z-index: 9999;
+                }
+
+                .active {
+                    display: block;
+                    background-color:$color-main;
+                    padding: 50px 0 20px;
+                    width: 100%;
+                    margin: 0;
                 }
             }
         }

@@ -80,6 +80,7 @@
 
 .header .navigation .navigation-links .navbar {
   display: none;
+  cursor: pointer;
 }
 
 .header .header-image {
@@ -156,14 +157,20 @@
   .header .register .social-media {
     display: none;
   }
+  .header .navigation {
+    margin: 40px 0;
+  }
   .header .navigation .logo {
     margin: 0;
+    z-index: 99999;
   }
   .header .navigation .navigation-links .navigation-list {
     position: absolute;
-    top: 25%;
-    left: 10%;
+    top: 18%;
+    left: 0;
+    text-align: center;
     z-index: 999;
+    display: none;
   }
   .header .navigation .navigation-links .navigation-list .list-item {
     display: block;
@@ -174,6 +181,14 @@
   }
   .header .navigation .navigation-links .navbar {
     display: block;
+    z-index: 9999;
+  }
+  .header .navigation .navigation-links .active {
+    display: block;
+    background-color: #ffffff;
+    padding: 50px 0 20px;
+    width: 100%;
+    margin: 0;
   }
   .header .header-title {
     font-size: 18px;
