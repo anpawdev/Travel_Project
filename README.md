@@ -1,7 +1,6 @@
 # Travel_Project
 
 Simple webside layout
-https://annapawlik.github.io/Travel_Project/
 
 ## Technologies:
 - HTML5
@@ -10,7 +9,7 @@ https://annapawlik.github.io/Travel_Project/
 
 ## Getting Started:
 
-Visit: 
+Visit: https://annapawlik.github.io/Travel_Project/
 
 OR
 
