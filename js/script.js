@@ -118,3 +118,9 @@ const menu = document.querySelector('.navigation-list');
 navbar.addEventListener('click', function() {
   menu.classList.toggle('active');
 });
+
+const scrollTop = document.querySelector('.back-to-top');
+
+scrollTop.addEventListener('click', function(){
+  window.scrollTo(0, 0);
+});

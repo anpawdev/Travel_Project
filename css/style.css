@@ -386,7 +386,7 @@ footer .footer-navigation .copyright {
   color: #5d6e80;
 }
 
-footer .back-to-home {
+footer .back-to-top {
   font-size: 19px;
   width: 0;
   height: 0;
@@ -394,9 +394,10 @@ footer .back-to-home {
   border-right: 35px solid transparent;
   border-bottom: 40px solid #1cc9a7;
   margin: 40px auto 0;
+  cursor: pointer;
 }
 
-footer .back-to-home .fas {
+footer .back-to-top .fas {
   position: relative;
   top: 16px;
   right: 8px;
